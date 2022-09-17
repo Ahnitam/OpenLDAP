@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  apache:
+    build: apache/
+    container_name: apache
+    ports:
+      - '8000:80'
+    volumes:
+      - ./html:/var/www/html
+    environment:
+      - LDAP_HOST=<LDAP_HOST>
+      - LDAP_PORT=389
+      - LDAP_ADMIN_USER=<LDAP_ADMIN_USER>
+      - LDAP_ADMIN_PASS=<LDAP_ADMIN_PASS>
+      - "LDAP_BASE_DN=<LDAP_BASE_DN>"
+      - "LDAP_USERS_DN=<LDAP_USERS_DN>"
+      - "LDAP_GROUPS_DN=<LDAP_GROUPS_DN>"
+      - AES_CIPHER=aes-128-ecb
+      - AES_KEY=<AES_KEY>
+      - SESSION_TOKEN=TOKEN
