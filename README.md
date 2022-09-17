@@ -1,5 +1,7 @@
 # LDAP usando PHP
 
+### Atividade proposta na disciplina de Segurança de Redes no curso de Análise e Desenvolvimento de Sistemas
+
 - 1. Faça um sistema que utilize os serviços de autenticação de usuários e grupos através do protocolo LDAP.
 - 2. O Sistema deve ter uma área restrita ao grupo do gerentes;
 - 3. O Sistema deve ter uma área restrita aos grupos de vendedores e de gerentes;
